@@ -14,7 +14,11 @@
   "go.coverOnSingleTest": true,
   "go.coverOnSingleTestFile": true,
   "go.lintTool": "golangci-lint",
-  "go.lintFlags": ["--config=${workspaceFolder}/.golangci.yaml", "--fast", "--fix"],
+  "go.lintFlags": [
+    "--config=${workspaceFolder}/.golangci.yaml",
+    "--fast",
+    "--fix"
+  ],
   "go.lintOnSave": "package",
   "go.testEnvVars": {},
   "go.testFlags": ["-tags", "manual"],
@@ -26,7 +30,7 @@
   "gopls": {
     "buildFlags": ["-tags", "manual"],
     "formatting.gofumpt": true,
-    "formatting.local": "github.com/peterldowns/pgtestdb",
+    "formatting.local": "github.com/Bikappa/pgtestdb",
     "build.directoryFilters": []
   },
   "[go]": {

@@ -5,7 +5,7 @@ import (
 
 	"github.com/peterldowns/testy/assert"
 
-	"github.com/peterldowns/pgtestdb/migrators/common"
+	"github.com/Bikappa/pgtestdb/migrators/common"
 )
 
 func TestRecursiveHash(t *testing.T) {

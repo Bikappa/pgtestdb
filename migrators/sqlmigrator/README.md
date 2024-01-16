@@ -1,7 +1,7 @@
 # sqlmigrator
 
 ```shell
-go get github.com/peterldowns/pgtestdb/migrators/sqlmigrator@latest
+go get github.com/Bikappa/pgtestdb/migrators/sqlmigrator@latest
 ```
 
 sqlmigrator provides migrators that can be used out of the box with projects that use [rubenv/sql-migrate](https://github.com/rubenv/sql-migrate) for migrations.

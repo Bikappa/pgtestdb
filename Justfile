@@ -18,7 +18,7 @@ test *args='./...':
 # test pgtestdb + migrators
 test-all:
   #!/usr/bin/env bash
-  go test -race github.com/peterldowns/pgtestdb/...
+  go test -race github.com/Bikappa/pgtestdb/...
 
 # lint pgtestdb
 lint *args:
@@ -81,4 +81,4 @@ bump-version version:
   echo "bumping $OLD_VERSION -> $NEW_VERSION"
   echo $NEW_VERSION > VERSION
   sed -i -e "s/$OLD_VERSION/$NEW_VERSION/g" README.md
-  sed -i -e "s,github.com/peterldowns/pgtestdb $OLD_VERSION,github.com/peterldowns/pgtestdb $NEW_VERSION,g" migrators/*/go.mod
+  sed -i -e "s,github.com/Bikappa/pgtestdb $OLD_VERSION,github.com/Bikappa/pgtestdb $NEW_VERSION,g" migrators/*/go.mod

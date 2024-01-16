@@ -1,7 +1,7 @@
 # pgmigrator
 
 ```shell
-go get github.com/peterldowns/pgtestdb/migrators/pgmigrator@latest
+go get github.com/Bikappa/pgtestdb/migrators/pgmigrator@latest
 ```
 
 pgmigrator provides a migrator that can be used out of the box with projects that use [peterldowns/pgmigrate](https://github.com/peterldowns/pgmigrate) for migrations.

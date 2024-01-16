@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/peterldowns/pgtestdb/internal/once"
-	"github.com/peterldowns/pgtestdb/internal/sessionlock"
+	"github.com/Bikappa/pgtestdb/internal/once"
+	"github.com/Bikappa/pgtestdb/internal/sessionlock"
 )
 
 const (
@@ -384,7 +384,7 @@ func randomID() string {
 // out testdb and aren't sure which migrator to use yet.
 //
 // For more documentation on migrators, see
-// https://github.com/peterldowns/pgtestdb#testdbmigrator
+// https://github.com/Bikappa/pgtestdb#testdbmigrator
 type NoopMigrator struct{}
 
 func (NoopMigrator) Hash() (string, error) {

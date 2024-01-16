@@ -12,9 +12,9 @@ import (
 	"github.com/peterldowns/testy/assert"
 	"github.com/peterldowns/testy/check"
 
-	"github.com/peterldowns/pgtestdb"
-	"github.com/peterldowns/pgtestdb/internal/sessionlock"
-	"github.com/peterldowns/pgtestdb/migrators/common"
+	"github.com/Bikappa/pgtestdb"
+	"github.com/Bikappa/pgtestdb/internal/sessionlock"
+	"github.com/Bikappa/pgtestdb/migrators/common"
 )
 
 // You should wrap pgtestdb.New inside your own helper, like this,

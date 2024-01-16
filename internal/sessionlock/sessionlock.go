@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/peterldowns/pgtestdb/internal/multierr"
+	"github.com/Bikappa/pgtestdb/internal/multierr"
 )
 
 // IDPrefix is prepended to any given lock name when computing the integer lock

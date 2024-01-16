@@ -1,13 +1,13 @@
-module github.com/peterldowns/pgtestdb/migrators/dbmatemigrator
+module github.com/Bikappa/pgtestdb/migrators/dbmatemigrator
 
 go 1.18
 
-replace github.com/peterldowns/pgtestdb => ../../
+replace github.com/Bikappa/pgtestdb => ../../
 
 require (
 	github.com/amacneil/dbmate/v2 v2.4.0
 	github.com/jackc/pgx/v5 v5.5.1
-	github.com/peterldowns/pgtestdb v0.0.12
+	github.com/Bikappa/pgtestdb v0.0.12
 	github.com/peterldowns/testy v0.0.1
 )
 

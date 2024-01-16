@@ -10,7 +10,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/peterldowns/pgtestdb/internal/multierr"
+	"github.com/Bikappa/pgtestdb/internal/multierr"
 )
 
 // WithDB is a helper for writing postgres-backed tests. It will:

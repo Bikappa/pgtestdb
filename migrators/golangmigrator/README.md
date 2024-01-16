@@ -1,7 +1,7 @@
 # golangmigrator
 
 ```
-go get github.com/peterldowns/pgtestdb/migrators/golangmigrator@latest
+go get github.com/Bikappa/pgtestdb/migrators/golangmigrator@latest
 ```
 
 golangmigrator provides a migrator that can be used out of the box with projects

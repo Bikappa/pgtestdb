@@ -12,8 +12,8 @@ everything.
 
 # Documentation
 
-- [This page, https://github.com/peterldowns/pgtestdb](https://github.com/peterldowns/pgtestdb)
-- [The go.dev docs, pkg.go.dev/github.com/peterldowns/pgtestdb](https://pkg.go.dev/github.com/peterldowns/pgtestdb)
+- [This page, https://github.com/Bikappa/pgtestdb](https://github.com/Bikappa/pgtestdb)
+- [The go.dev docs, pkg.go.dev/github.com/Bikappa/pgtestdb](https://pkg.go.dev/github.com/Bikappa/pgtestdb)
 
 This page is the primary source for documentation. The code itself is supposed
 to be well-organized, and each function has a meaningful docstring, so you
@@ -50,7 +50,7 @@ pgtestdb is concurrency-safe and I encourage you to run your tests in parallel.
 ## Install
 
 ```shell
-go get github.com/peterldowns/pgtestdb@latest
+go get github.com/Bikappa/pgtestdb@latest
 ```
 
 ## Quickstart
@@ -424,7 +424,7 @@ nothing at all.
 // out pgtestdb and aren't sure which migrator to use yet.
 //
 // For more documentation on migrators, see
-// https://github.com/peterldowns/pgtestdb#pgtestdbmigrator
+// https://github.com/Bikappa/pgtestdb#pgtestdbmigrator
 type NoopMigrator struct{}
 ```
 

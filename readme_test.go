@@ -10,7 +10,7 @@ import (
 	"github.com/peterldowns/testy/assert"
 	"github.com/peterldowns/testy/check"
 
-	"github.com/peterldowns/pgtestdb"
+	"github.com/Bikappa/pgtestdb"
 )
 
 func TestMyExample(t *testing.T) {

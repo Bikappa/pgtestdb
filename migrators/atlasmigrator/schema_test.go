@@ -8,8 +8,8 @@ import (
 	"github.com/peterldowns/testy/assert"
 	"github.com/peterldowns/testy/check"
 
-	"github.com/peterldowns/pgtestdb"
-	"github.com/peterldowns/pgtestdb/migrators/atlasmigrator"
+	"github.com/Bikappa/pgtestdb"
+	"github.com/Bikappa/pgtestdb/migrators/atlasmigrator"
 )
 
 func TestSchemaMigrator(t *testing.T) {

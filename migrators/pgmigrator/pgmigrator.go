@@ -8,10 +8,10 @@ import (
 
 	"github.com/peterldowns/pgmigrate"
 
-	"github.com/peterldowns/pgtestdb"
+	"github.com/Bikappa/pgtestdb"
 
-	"github.com/peterldowns/pgtestdb/internal/multierr"
-	"github.com/peterldowns/pgtestdb/migrators/common"
+	"github.com/Bikappa/pgtestdb/internal/multierr"
+	"github.com/Bikappa/pgtestdb/migrators/common"
 )
 
 // Option provides a way to configure the PGMigrator struct and its behavior.

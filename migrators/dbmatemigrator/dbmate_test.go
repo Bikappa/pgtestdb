@@ -9,8 +9,8 @@ import (
 	"github.com/peterldowns/testy/assert"
 	"github.com/peterldowns/testy/check"
 
-	"github.com/peterldowns/pgtestdb"
-	"github.com/peterldowns/pgtestdb/migrators/dbmatemigrator"
+	"github.com/Bikappa/pgtestdb"
+	"github.com/Bikappa/pgtestdb/migrators/dbmatemigrator"
 )
 
 func TestDbmateMigratorWithOptions(t *testing.T) {
