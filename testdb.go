@@ -7,6 +7,7 @@ import (
 	"database/sql"
 	"encoding/hex"
 	"fmt"
+	"os"
 	"testing"
 
 	"github.com/Bikappa/pgtestdb/internal/once"
@@ -162,7 +163,7 @@ func create(t testing.TB, conf Config, migrator Migrator) (*Config, *sql.DB) {
 			return // uncreachable
 		}
 		// If the test failed, leave the instance around for further investigation
-		if t.Failed() {
+		if t.Failed() || os.Getenv("CI") == "true" {
 			return
 		}
 		// Otherwise, remove the instance from the server
