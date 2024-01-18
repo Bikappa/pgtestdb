@@ -177,6 +177,11 @@ func create(t testing.TB, conf Config, migrator Migrator) (*Config, *sql.DB) {
 		if _, err := baseDB.ExecContext(ctx, query); err != nil {
 			t.Fatalf("could not drop test database '%s': %s", instance.Database, err)
 		}
+
+		err = baseDB.Close()
+		if err != nil {
+			t.Fatalf("failed to close baseDB during cleanup: %s", err)
+		}
 	})
 
 	// Even if the template previously existed, verify that it was created
