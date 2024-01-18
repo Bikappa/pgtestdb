@@ -167,6 +167,11 @@ func create(t testing.TB, conf Config, migrator Migrator) (*Config, *sql.DB) {
 		if t.Failed() {
 			return
 		}
+
+		baseDB, err := conf.Connect()
+		if err != nil {
+			t.Fatalf("could not connect to database: %s", err)
+		}
 		// Otherwise, remove the instance from the server
 		query := fmt.Sprintf(`DROP DATABASE IF EXISTS "%s"`, instance.Database)
 		if _, err := baseDB.ExecContext(ctx, query); err != nil {
