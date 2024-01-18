@@ -7,7 +7,6 @@ import (
 	"database/sql"
 	"encoding/hex"
 	"fmt"
-	"os"
 	"testing"
 
 	"github.com/Bikappa/pgtestdb/internal/once"
@@ -153,17 +152,19 @@ func create(t testing.TB, conf Config, migrator Migrator) (*Config, *sql.DB) {
 		t.Fatalf("failed to connect to instance: %s", err)
 		return nil, nil // unreachable
 	}
-
+	err = baseDB.Close()
+	if err != nil {
+		t.Fatalf("failed to close baseDB: %s", err)
+		return nil, nil // unreachable
+	}
 	t.Cleanup(func() {
-		defer baseDB.Close()
-
 		// Close the testDB
 		if err := db.Close(); err != nil {
 			t.Fatalf("could not close test database: '%s': %s", instance.Database, err)
 			return // uncreachable
 		}
 		// If the test failed, leave the instance around for further investigation
-		if t.Failed() || os.Getenv("CI") == "true" {
+		if t.Failed() {
 			return
 		}
 		// Otherwise, remove the instance from the server
